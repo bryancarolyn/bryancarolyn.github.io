@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.5/dayjs.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;family=Roboto:wght@100&amp;display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+      #app{
+        text-align: center;
+        font-size: 46rem;
+        color: #3f3f3f;
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      {{ totalDays }}
+    </div>
+  </body>
+
+  <script>
+      new Vue({
+    el:"#app",
+    data: {
+      totalDays: 0
+    }, 
+    methods: {
+      getTotalDay: function(){
+        const date1 = dayjs()
+        this.totalDays = date1.diff('2020-04-30', 'days') // 7
+      }
+    }, 
+    mounted: function(){
+      this.getTotalDay()
+    }
+  })
+  </script>
+</html>
