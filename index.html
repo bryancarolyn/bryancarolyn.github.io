@@ -11,6 +11,10 @@
     <meta property="og:description" content="datadata">
 
     <style>
+      #white {
+        color: white;
+      }
+      
       .red {
         color: red;
       }
@@ -26,9 +30,11 @@
   <body>
     <div id="app">
       <div id="data">
-        {{ totalDays }}
+        {{ days_spent }}
       </div>
-
+      <div id="white">
+        {{ days_left_to_spent }}
+      </div>
       <div>
         <h3>Quick Links</h3>
 
@@ -178,6 +184,8 @@
           <li>BFGF 5</li>
           <li>BFGF 6</li>
           <li>BFGF 7</li>
+
+          <h3>Compromising & Dancing & understanding</h3>
           <li>Husband/Wife</li>
         </ol>
 
@@ -206,7 +214,10 @@
     data: {
       totalDays: 0, 
       total: 300,
+      days_spent: 0,
+      days_left_to_spent: 0,
       used: 212,
+      total_days: 365,
       answer1: 0,
       answer1_percent: 0,
       answer1_next: 0,
@@ -233,13 +244,17 @@
       },
       getTotalDay: function(){
         const date1 = dayjs()
-        this.totalDays = date1.diff('2020-04-30', 'days') // 7
+        this.days_spent = date1.diff('2020-04-30', 'days') // 7
+      },
+      daysLeft: function(){
+        this.days_left_to_spent = this.total_days - this.days_spent
       }
     }, 
     mounted: function(){
       this.getTotalDay()
       this.getAnswer1()
       this.getAnswer2()
+      this.daysLeft()
       document.title = this.totalDays + " days - Bryan + Carolyn 🙆‍♂️ ❤️ 🙆‍♀️"
     }
   })
