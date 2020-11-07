@@ -147,6 +147,8 @@
           <li>229 - Little Island Brewing - 9 August 2020 - 12 noon - 630pm</li>
           <br>Milestone: <a href="https://goo.gl/maps/p9MvjyspLUUiydK38">Will you be my girlfriend? Yes</a>
         
+          <img width="200" src="imgs/willyou.png"/>
+
           <li> 222.5 Swimming at Yishun Euphony Garden (21 August - 5pm - 9:30pm)
 
             <ol type="I">
@@ -191,6 +193,13 @@
           <li>
             *163.5 At YotelAir :) - (14 Oct 2020: 6pm- 15 Oct 7:00am)
           </li>
+
+          <!-- <li>
+            *XXX At Yishun - (28 Oct 2020: )
+          </li>
+          <li>
+            *XXX At Yishun - (30 Oct 2020: )
+          </li> -->
         </ol>
       </div>
 
@@ -276,7 +285,7 @@
         this.answer2_percent_next = ((((this.total+4)-this.used)/this.total) * 100).toFixed(2)
       },
       getTotalDay: function(){
-        const date1 = dayjs()
+        const date1 = dayjs('2020-11-3')
         this.days_spent = date1.diff('2020-04-30', 'days') // 7
       },
       daysLeft: function(){
@@ -288,7 +297,7 @@
       this.getAnswer1()
       this.getAnswer2()
       this.daysLeft()
-      document.title = this.days_spent + " days - Bryan + Carolyn 🙆‍♂️ ❤️ 🙆‍♀️"
+      document.title = 187 + " days - Bryan + Carolyn 🙆‍♂️ ❤️ 🙆‍♀️"
     }
   })
   </script>
