@@ -1,0 +1,343 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.5/dayjs.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;family=Roboto:wght@100&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <title>Bryan + Carolyn 🙆‍♂️ ❤️ 🙆‍♀️ </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="data">
+    <meta property="og:description" content="datadata">
+
+    <style>
+      #white {
+        color: white;
+      }
+      
+      .red {
+        color: red;
+      }
+
+      #data{
+        text-align: center;
+        font-size: 2000%;
+        color: #3f3f3f;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      span#actual_days{
+         font-size: 50px;
+        color: #3f3f3f;
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+
+    <a href="https://forms.gle/pJN4BssdKDKN9UVeA">Submit Emotion</a>
+
+
+    <div id="app">
+      <div id="data">
+        {{ days_spent }}
+        
+        <span id="actual_days">
+          {{ actual_days }}
+        </span>
+      </div>
+      <div id="white">
+        {{ days_left_to_spent }}
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+
+        <div>
+          <a href="https://www.praywithme.com/the-lords-prayer.html">The Lord's prayer in English</a>
+          <a href="https://www.lords-prayer-words.com/lords_prayer_chinese_mandarin.html">The Lord's prayer in Chinese</a>
+        </div>
+        
+        <div>
+          Our Bibles --- 
+          <a href="https://biblehub.com">
+            Bryan's</a> --- 
+
+          <a href="">
+            Carolyn's</a>
+        </div>
+
+        <div>
+          Our Bible Plans ---
+
+          <a href="https://my.bible.com/users/ytbryan/reading-plans">Bryan's</a> ---
+
+          <a href="https://my.bible.com/users/carolynkhoo/reading-plans">Carolyn's</a>
+        </div>
+        
+        <div>
+          Our Weaknesses (Based on personalities) ---
+
+          <a href="https://www.crystalknows.com/personality-type/infj/weaknesses">
+          INFJ's</a>
+          <a href="https://www.crystalknows.com/personality-type/ENFP/weaknesses">
+            ENFP's
+          </a>
+        </div>
+
+        <div>
+          Our Personalities ---
+          
+          <a href="https://www.truity.com/personality-type/INFJ">
+            INFJ</a> ---
+
+          <a href="https://www.truity.com/personality-type/ENFP">
+          ENFP</a> 
+          
+
+        </div>
+
+        <div>
+          <a href="mailto:bryancarolyn@gmail.com">
+            Our Email 
+          </a>
+        </div>
+        <div>
+          <a href="https://combot.org/c/1305925781/a">
+            Our Dropbox (coming soon)
+          </a>
+        </div>
+
+        <div>
+          <a href="https://combot.org/c/1305925781/a">
+            Our Photos (coming soon)
+          </a>
+        </div>
+
+        <div>
+          <a href="https://combot.org/c/1305925781/a">
+            Our Analytics
+          </a>
+        </div>
+      </div>
+
+
+      <div>
+        <details><summary>300 hours</summary>
+          <p>
+            Left: {{ answer1 }}hr ({{ answer1_percent }}%) <br>
+            Left <span class="red">(next session)</span>: {{ answer1_next }}hr ({{ answer1_percent_next }}%)
+          </p>
+
+          <p>
+            Consumed: {{ answer2 }}hr ({{ answer2_percent }}%) <br>
+            Consumed <span class="red">(next session)</span>: {{ answer2_next }}hr ({{ answer2_percent_next }}%)
+          </p>
+
+          <i>Next session assumes the following session is a four hour session.</i>
+        </details>
+
+        <ol>
+          <li>Perfect 300</li>
+          <li>250 - Zoom & covid's fault!</li>
+          <li>246 - Craftmen Eastwood - 12 July</li>
+          <li>
+            <details>
+              <summary>
+                239 - Cycling along ECP and having lunch at Joe & Dough at Millenia Walk - 23 July
+                </summary>
+                <p>
+                  <strike>
+                  Tentative (25 July) Bball + Snack?
+                  <ol>
+                    <li>Sheltered Khatib Court</li>
+                    <li>or Yishun Condo</li>
+                    <li>no playing with others </li>
+                  </ol> 
+                </strike>
+
+                </p>
+            </details>
+            <ol type="I">
+              <li>237 - Met at Tampines (26 July 2020: 5pm - 7pm)</li>
+              <li>235.5 - Met at Tampines (2 August 2020: 530pm - 7pm)</li>
+            </ol>
+          </li>
+          
+          <li>229 - Little Island Brewing - 9 August 2020 - 12 noon - 630pm</li>
+          <br>Milestone: <a href="https://goo.gl/maps/p9MvjyspLUUiydK38">Will you be my girlfriend? Yes</a>
+        
+          <img width="200" src="imgs/willyou.png"/>
+
+          <li> 222.5 Swimming at Yishun Euphony Garden (21 August - 5pm - 9:30pm)
+
+            <ol type="I">
+              <li> 227 - Met at Tampines (16 August 2020: 4:30pm - 6:30pm)</li>
+              <li> 219 - Met at Tampines, Ran to CCP for dinner (27 August 2020: 7pm - 1030pm)</li>
+            </ol>
+          </li>
+          <li>
+            212 - Spent time at Changi Lounge & Early-birthday Dinner at Prive Jewel (3 Sept 2020: 330pm - 1030pm)
+            <b> Happy Birthday Baby Carol! </b> 🎉
+          </li>
+
+          <li>
+            204 A day at changi lounge and dinner at the food court -  (10 Sept 2020: 230pm - 1030pm)
+            <b> I enjoy every moment with Carol </b>
+          </li>
+
+          <li>
+            200 Dinner at Jewel food court -  (13 Sept 2020: 6pm-10pm)
+          </li>
+
+          <li>
+            195 Dinner at Japanese food stall with shopping at tampines - (17 Sept 2020: 430pm-930pm)
+          </li>
+
+          <li>
+            187 Lunch at Habitual Coffee Thomson, Onwards Movie and Dinner at Izakaya Shinjuku Cuppage Plaza - (4 Oct 2020: 130pm-930pm)
+          </li>
+
+          <li>
+            183.5 At Changi lounge, finding Carol and have dinner at Changi lounge, got chicken, salad and bbt :) - (6 Oct 2020: 7pm-1030pm)
+          </li>
+
+          <li>
+            178 At Yishun, finish swimming, had dinner at Japanese place and had a good chat at the park :) - (7 Oct 2020: 4-9:30pm)
+          </li>
+
+          <li>
+            *176.5 At Tampines St 81 - So Thai :) - (12 Oct 2020: 530pm - 7pm)
+          </li>
+
+          <li>
+            *163.5 At YotelAir :) - (14 Oct 2020: 6pm- 15 Oct 7:00am)
+          </li>
+
+          <!-- <li>
+            *XXX At Yishun - (28 Oct 2020: )
+          </li>
+          <li>
+            *XXX At Yishun - (30 Oct 2020: )
+          </li> -->
+        </ol>
+      </div>
+
+
+      <div>
+        <li>25 Nov 2020 - Met Carol's dad and mom</li>
+      </div>
+
+      <div>
+        <h3>Which stage are we in?</h3>
+        <strike>
+        <p>Enough stages? Specific enough? Clear enough? 
+          Feel free to change name and stages anytime. 
+          level 1,2,3 are just tentative. Waiting for approval from 
+          my high-D GF</strike>.
+        </p>
+        <ol>
+          <h3>Understanding</h3>
+          <strike>
+          <li>Friends only</li>
+          <li>Special Best Friend 1</li>
+          <li>SBF 2 </li>
+          </strike>
+          <h3>Dancing & understanding</h3>
+          <li>BFGF 1</li>
+          <li>BFGF 2</li>
+          <li>BFGF 3</li>
+          <li>BFGF 4</li>
+          <li>BFGF 5</li>
+          <li>BFGF 6</li>
+          <li>BFGF 7 👈 </li>
+
+          <h3>Compromising & Dancing & understanding</h3>
+          <li>Husband/Wife</li>
+        </ol>
+
+      </div>
+
+      <div>
+        <h3>All books/plans</h3>
+        <ol>
+          <strike>
+            <li>Too close too soon</li>
+            <li>Sacred Search</li>
+          </strike>
+          <li>Emotionally Healthy spirtuality</li>
+          <li>Before You Say "I Do"®: A Marriage Preparation Guide for Couples OR 101 Questions to Ask Before You Get Engaged</li>
+          <li>The Marriage Book</li>
+          <li>The Parenting Book</li>
+        </ol>
+      </div>
+      
+
+      <div>
+        <a href="https://www.youtube.com/watch?v=knBJGNisJS0&t=52s">7 principles for making relationship work</a>
+        <ol>
+          <li><a href="https://thepowermoves.com/love-maps/">Love map</a></li>
+          <li>Nuture your fondness & admiration </li>
+          <li>Turn towards each other instead of away</li>
+          <li>Let your partner influence you</li>
+          <li>Solve your solvable problems. Solvable vs perpetual ones.</li>
+          <li>Overcome gridlock</li>
+          <li>Create shared meaning</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+
+  <script>
+      new Vue({
+    el:"#app",
+    data: {
+      totalDays: 0, 
+      total: 300,
+      days_spent: 0,
+      days_left_to_spent: 0,
+      used: 195,
+      total_days: 365,
+      answer1: 0,
+      answer1_percent: 0,
+      answer1_next: 0,
+      answer1_percent_next: 0,
+      answer2: 0,
+      answer2_percent: 0,
+      answer2_next: 0,
+      answer2_percent_next: 0,
+    }, 
+    methods: {
+      getAnswer1: function(){
+        this.answer1 = this.used//((this.used/this.total) * this.total)
+        this.answer1_percent = ((this.used/this.total) * 100).toFixed(2)
+        
+        this.answer1_next = this.used - 4 //(((this.used-4)/this.total) * this.total)
+        this.answer1_percent_next = (((this.used-4)/this.total) * 100).toFixed(2)
+      },
+      getAnswer2: function(){
+        this.answer2 = this.total-this.used //((this.total-this.used)/this.total) * this.total
+        this.answer2_percent = (((this.total-this.used)/this.total) * 100).toFixed(2)
+
+        this.answer2_next = (this.total+4) - this.used //(((this.total+4) -this.used)/this.total) * this.total
+        this.answer2_percent_next = ((((this.total+4)-this.used)/this.total) * 100).toFixed(2)
+      },
+      getTotalDay: function(){
+        const date1 = dayjs()
+        // const date1 = dayjs('2020-11-3')
+        this.days_spent = date1.diff('2020-04-30', 'days') // 7
+        this.actual_days = date1.diff('2020-08-09', 'days')
+      },
+      daysLeft: function(){
+        this.days_left_to_spent = this.total_days - this.days_spent
+      }
+    }, 
+    mounted: function(){
+      this.getTotalDay()
+      this.getAnswer1()
+      this.getAnswer2()
+      this.daysLeft()
+      document.title = this.days_spent + " days - Bryan + Carolyn 🙆‍♂️ ❤️ 🙆‍♀️"
+    }
+  })
+  </script>
+</html>
